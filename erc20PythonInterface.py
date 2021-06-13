@@ -34,7 +34,7 @@ w3.eth.getTransactionReceipt('0xb9a40a1e49af1026b51044727a12c3e2bf88d6120dbf4e91
 contractAddress = '0x26760F09b813C49B731837ab2dF23e3b82f0dfDc'
 
 import json
-with open('/home/felipe/Documents/Ethereum/Scripts/Remix-Ide/Contracts/Contracts/artifacts/FucksToken.json') as json_file:
+with open('/home/felipe/Documents/Ethereum/Scripts/Remix-Ide/Contracts/artifacts/FucksToken.json') as json_file:
     contractData = json.load(json_file)
 
 
@@ -58,7 +58,7 @@ contract.functions.totalSupply().call()
 #atribui um nome aos enderecos
 contractOwner = w3.eth.accounts[9]
 alice         = w3.eth.accounts[0] 
-bob           = w3.eth.accounts[0] 
+bob           = w3.eth.accounts[1] 
 contract.functions.balanceOf(contractOwner).call()
 
 """
